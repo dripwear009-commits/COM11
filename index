@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vagroco — Test Before You Bet</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              500: '#16a34a',
+              600: '#15803d',
+              900: '#052e16',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="h-9 w-9 bg-emerald-500 rounded-lg flex items-center justify-center font-black text-slate-950 text-xl">V</div>
+        <span class="text-xl font-bold tracking-tight text-white">VAGROCO</span>
+      </div>
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-400">
+        <a href="#how-it-works" class="hover:text-emerald-400 transition-colors">How It Works</a>
+        <a href="#assessment-tool" class="hover:text-emerald-400 transition-colors">Score Simulator</a>
+        <a href="#investor-portal" class="hover:text-emerald-400 transition-colors">Investor Deal Flow</a>
+        <a href="#business-model" class="hover:text-emerald-400 transition-colors">Economics</a>
+      </nav>
+      <a href="#assessment-tool" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-4 py-2 rounded-lg text-sm transition shadow-lg shadow-emerald-500/20">
+        Assess Your Idea
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-20 px-6 max-w-5xl mx-auto text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-6">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      Validation &amp; Deal Flow Infrastructure
+    </div>
+    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight text-white mb-6">
+      Know before you build.<br/>
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200">Grow before you raise.</span>
+    </h1>
+    <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+      Transform your assumptions into verified evidence. Standardized, empirical evaluations to protect founder capital and accelerate vetted deal flow.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#assessment-tool" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-3 rounded-xl transition shadow-lg shadow-emerald-500/25 flex items-center gap-2">
+        <span>Test Your Idea</span>
+        <i class="fa-solid fa-arrow-right text-sm"></i>
+      </a>
+      <a href="#investor-portal" class="bg-slate-900 hover:bg-slate-800 border border-slate-700 font-semibold px-6 py-3 rounded-xl text-slate-200 transition">
+        Investor Access
+      </a>
+    </div>
+  </section>
+
+  <!-- The 7 Dimensions Grid -->
+  <section id="how-it-works" class="py-16 border-t border-slate-800/80 bg-slate-900/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-3">The 7 Evaluation Dimensions</h2>
+        <p class="text-slate-400 text-sm">Every business is audited across 7 critical dimensions to compile an evidence-backed score out of 100.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+        <div class="p-5 rounded-xl bg-slate-900/80 border border-slate-800">
+          <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold mb-3">1</div>
+          <h3 class="font-semibold text-white mb-1">Market Opportunity</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">TAM/SAM sizing, customer demand validation, and target demographic appetite.</p>
+        </div>
+        <div class="p-5 rounded-xl bg-slate-900/80 border border-slate-800">
+          <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold mb-3">2</div>
+          <h3 class="font-semibold text-white mb-1">Competition</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">Direct &amp; indirect moat defensibility, positioning, and alternate solutions.</p>
+        </div>
+        <div class="p-5 rounded-xl bg-slate-900/80 border border-slate-800">
+          <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold mb-3">3</div>
+          <h3 class="font-semibold text-white mb-1">Product Feasibility</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">Tech complexity, MVP usability, physical manufacturing, and prototype feedback.</p>
+        </div>
+        <div class="p-5 rounded-xl bg-slate-900/80 border border-slate-800">
+          <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold mb-3">4</div>
+          <h3 class="font-semibold text-white mb-1">Financial Viability</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">Unit economics, gross margins, estimated CAC, and burn trajectory.</p>
+        </div>
+        <div class="p-5 rounded-xl bg-slate-900/80 border border-slate-800">
+          <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold mb-3">5</div>
+          <h3 class="font-semibold text-white mb-1">Scalability</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">Distribution channel velocity, operational bottleneck risks, and expansion leverage.</p>
+        </div>
+        <div class="p-5 rounded-xl bg-slate-900/80 border border-slate-800">
+          <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold mb-3">6</div>
+          <h3 class="font-semibold text-white mb-1">Industry &amp; Regulation</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">Compliance compliance hurdles, IP protection, legal friction, and policy trends.</p>
+        </div>
+        <div class="p-5 rounded-xl bg-slate-900/80 border border-slate-800 sm:col-span-2 lg:col-span-2">
+          <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold mb-3">7</div>
+          <h3 class="font-semibold text-white mb-1">Founder Execution</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">Domain competency, execution velocity, coachability, and team balance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Score Simulator Tool -->
+  <section id="assessment-tool" class="py-20 px-6 max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider">Live Simulator</span>
+      <h2 class="text-3xl font-bold mt-1 text-white">Vagroco Scorecard Simulator</h2>
+      <p class="text-slate-400 text-sm mt-2">Adjust the dimension metrics below to preview the calculated score and resulting strategic verdict.</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+      <!-- Input Sliders -->
+      <div class="lg:col-span-2 bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-5">
+        <h3 class="text-lg font-bold text-slate-200 mb-4 pb-3 border-b border-slate-800 flex items-center justify-between">
+          <span>7-Dimension Parameters</span>
+          <button onclick="resetSliders()" class="text-xs text-emerald-400 hover:underline">Reset Demo Data</button>
+        </h3>
+
+        <div>
+          <div class="flex justify-between text-sm mb-1">
+            <span class="font-medium text-slate-300">1. Market Opportunity</span>
+            <span id="val-market" class="font-bold text-emerald-400">91/100</span>
+          </div>
+          <input type="range" min="0" max="100" value="91" class="w-full accent-emerald-500 h-2 bg-slate-800 rounded-lg cursor-pointer" oninput="calculateScore()" id="slider-market">
+        </div>
+
+        <div>
+          <div class="flex justify-between text-sm mb-1">
+            <span class="font-medium text-slate-300">2. Competition &amp; Moat</span>
+            <span id="val-comp" class="font-bold text-emerald-400">76/100</span>
+          </div>
+          <input type="range" min="0" max="100" value="76" class="w-full accent-emerald-500 h-2 bg-slate-800 rounded-lg cursor-pointer" oninput="calculateScore()" id="slider-comp">
+        </div>
+
+        <div>
+          <div class="flex justify-between text-sm mb-1">
+            <span class="font-medium text-slate-300">3. Product Feasibility</span>
+            <span id="val-prod" class="font-bold text-emerald-400">84/100</span>
+          </div>
+          <input type="range" min="0" max="100" value="84" class="w-full accent-emerald-500 h-2 bg-slate-800 rounded-lg cursor-pointer" oninput="calculateScore()" id="slider-prod">
+        </div>
+
+        <div>
+          <div class="flex justify-between text-sm mb-1">
+            <span class="font-medium text-slate-300">4. Financial Viability</span>
+            <span id="val-fin" class="font-bold text-emerald-400">81/100</span>
+          </div>
+          <input type="range" min="0" max="100" value="81" class="w-full accent-emerald-500 h-2 bg-slate-800 rounded-lg cursor-pointer" oninput="calculateScore()" id="slider-fin">
+        </div>
+
+        <div>
+          <div class="flex justify-between text-sm mb-1">
+            <span class="font-medium text-slate-300">5. Scalability</span>
+            <span id="val-scale" class="font-bold text-emerald-400">88/100</span>
+          </div>
+          <input type="range" min="0" max="100" value="88" class="w-full accent-emerald-500 h-2 bg-slate-800 rounded-lg cursor-pointer" oninput="calculateScore()" id="slider-scale">
+        </div>
+
+        <div>
+          <div class="flex justify-between text-sm mb-1">
+            <span class="font-medium text-slate-300">6. Industry &amp; Regulation</span>
+            <span id="val-reg" class="font-bold text-emerald-400">82/100</span>
+          </div>
+          <input type="range" min="0" max="100" value="82" class="w-full accent-emerald-500 h-2 bg-slate-800 rounded-lg cursor-pointer" oninput="calculateScore()" id="slider-reg">
+        </div>
+
+        <div>
+          <div class="flex justify-between text-sm mb-1">
+            <span class="font-medium text-slate-300">7. Founder Execution</span>
+            <span id="val-exec" class="font-bold text-emerald-400">86/100</span>
+          </div>
+          <input type="range" min="0" max="100" value="86" class="w-full accent-emerald-500 h-2 bg-slate-800 rounded-lg cursor-pointer" oninput="calculateScore()" id="slider-exec">
+        </div>
+      </div>
+
+      <!-- Live Output Card -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col justify-between sticky top-24">
+        <div>
+          <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+            <span class="text-xs uppercase font-bold tracking-wider text-slate-400">Cumulative Score</span>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 font-mono">Dynamic</span>
+          </div>
+
+          <div class="my-6 text-center">
+            <div id="final-score" class="text-6xl sm:text-7xl font-black text-white font-mono tracking-tight">84</div>
+            <div class="text-sm text-slate-400 mt-1">out of 100 points</div>
+          </div>
+
+          <div id="verdict-card" class="p-4 rounded-xl border mb-6 transition-all text-center">
+            <span class="text-xs uppercase tracking-wider block font-semibold mb-1" id="verdict-label">Strategic Verdict</span>
+            <span class="text-2xl font-black tracking-wide" id="verdict-text">START</span>
+            <p class="text-xs mt-1 text-slate-300" id="verdict-desc">Score ≥ 80: High empirical validation. Ready for build &amp; capital allocation.</p>
+          </div>
+
+          <!-- Dynamic score changes demo -->
+          <div class="border-t border-slate-800 pt-4 space-y-2">
+            <span class="text-xs text-slate-400 font-medium block">Simulate Dynamic Trajectory:</span>
+            <div class="grid grid-cols-2 gap-2 text-xs">
+              <button onclick="simulateTrajectory('up')" class="p-2 rounded bg-slate-800 hover:bg-slate-700 text-slate-200 text-left border border-slate-700">
+                <i class="fa-solid fa-arrow-trend-up text-emerald-400 mr-1"></i> Cost drops (-20%)
+              </button>
+              <button onclick="simulateTrajectory('down')" class="p-2 rounded bg-slate-800 hover:bg-slate-700 text-slate-200 text-left border border-slate-700">
+                <i class="fa-solid fa-arrow-trend-down text-rose-400 mr-1"></i> Churn increases
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <button class="w-full mt-6 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 rounded-xl transition text-sm">
+          Download Detailed Report (PDF)
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Investor Deal Flow Portal -->
+  <section id="investor-portal" class="py-16 bg-slate-900/40 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider">Vagroco Investors</span>
+          <h2 class="text-3xl font-bold text-white mt-1">Curated Startup Deal Flow</h2>
+          <p class="text-slate-400 text-sm mt-1">Filter pre-audited ventures with verified benchmarks before booking intro meetings.</p>
+        </div>
+        <div class="flex flex-wrap gap-2 text-xs">
+          <select id="filter-industry" onchange="filterStartups()" class="bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-slate-200 outline-none">
+            <option value="All">All Industries</option>
+            <option value="FinTech">FinTech</option>
+            <option value="HealthTech">HealthTech</option>
+            <option value="B2B SaaS">B2B SaaS</option>
+            <option value="D2C / Hardware">D2C / Hardware</option>
+          </select>
+          <select id="filter-score" onchange="filterStartups()" class="bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-slate-200 outline-none">
+            <option value="0">Min Score: Any</option>
+            <option value="80">Score &ge; 80 (START)</option>
+            <option value="60">Score &ge; 60 (VALIDATE+)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Startups Table / Grid -->
+      <div id="startup-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Cards rendered dynamically via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Model & Unit Economics -->
+  <section id="business-model" class="py-20 px-6 max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider">Revenue Engines</span>
+      <h2 class="text-3xl font-bold text-white mt-1">Illustrative Monthly Economics</h2>
+      <p class="text-slate-400 text-sm mt-2">Driven by three complementary engines: Assessments, Recurring Growth Support, and Investor Access.</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
+      <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 flex flex-col justify-between">
+        <div>
+          <span class="text-xs text-emerald-400 font-bold">ENGINE 1</span>
+          <h3 class="text-xl font-bold text-white mt-1">Feasibility Assessments</h3>
+          <p class="text-slate-400 text-xs mt-2 leading-relaxed">One-time standardized audits ranging from essential desk reports to intensive real-world testing.</p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-800">
+          <div class="text-2xl font-bold text-white">Rs. 10 Lakh</div>
+          <div class="text-xs text-slate-400">20 audits @ avg. Rs. 50,000</div>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-slate-900 border border-emerald-500/40 relative flex flex-col justify-between shadow-xl shadow-emerald-500/5">
+        <div class="absolute -top-3 right-6 bg-emerald-500 text-slate-950 font-black text-[10px] uppercase px-2.5 py-0.5 rounded-full">Primary Recurring</div>
+        <div>
+          <span class="text-xs text-emerald-400 font-bold">ENGINE 2</span>
+          <h3 class="text-xl font-bold text-white mt-1">Vagroco Growth</h3>
+          <p class="text-slate-400 text-xs mt-2 leading-relaxed">Subscription retainer giving founders dedicated professional teams across strategy, finance, and operations.</p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-800">
+          <div class="text-2xl font-bold text-white">Rs. 30 Lakh</div>
+          <div class="text-xs text-slate-400">40 customers @ Rs. 75,000 / mo</div>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 flex flex-col justify-between">
+        <div>
+          <span class="text-xs text-emerald-400 font-bold">ENGINE 3</span>
+          <h3 class="text-xl font-bold text-white mt-1">Investor Subscriptions</h3>
+          <p class="text-slate-400 text-xs mt-2 leading-relaxed">Deal flow membership with granular benchmark filters, full report downloads, and direct intro requests.</p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-800">
+          <div class="text-2xl font-bold text-white">Rs. 15 Lakh</div>
+          <div class="text-xs text-slate-400">200 investors @ Rs. 7,500 / mo</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P&L Bar -->
+    <div class="p-6 bg-gradient-to-r from-slate-900 via-slate-900 to-emerald-950/40 border border-emerald-500/20 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <h4 class="font-bold text-white text-base">Monthly Snapshot Summary</h4>
+        <p class="text-xs text-slate-400">Gross Revenue: <strong class="text-white">Rs. 55 Lakh</strong> | Monthly OpEx: <strong class="text-white">Rs. 39 Lakh</strong></p>
+      </div>
+      <div class="text-right">
+        <span class="text-xs text-emerald-400 font-bold uppercase tracking-wider block">Operating Contribution</span>
+        <span class="text-2xl sm:text-3xl font-black text-emerald-300 font-mono">+Rs. 16 Lakh / mo</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 py-10 px-6 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="flex items-center space-x-2">
+        <div class="h-6 w-6 bg-emerald-500 rounded flex items-center justify-center font-black text-slate-950 text-xs">V</div>
+        <span class="font-semibold text-slate-300">Vagroco Platform</span>
+      </div>
+      <p>Transforming assumptions into evidence.</p>
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script>
+    const startups = [
+      {
+        name: "PayFlow India",
+        industry: "FinTech",
+        stage: "MVP+",
+        ask: "Rs. 75 Lakh",
+        score: 86,
+        status: "START",
+        desc: "Automated recurring settlement rails for MSME distributors."
+      },
+      {
+        name: "BioShield Diagnostics",
+        industry: "HealthTech",
+        stage: "Customer Testing",
+        ask: "Rs. 1.2 Crore",
+        score: 81,
+        status: "START",
+        desc: "Low-cost portable blood analysis kit with real-time sync."
+      },
+      {
+        name: "ShelfSync AI",
+        industry: "B2B SaaS",
+        stage: "Prototype",
+        ask: "Rs. 40 Lakh",
+        score: 68,
+        status: "VALIDATE",
+        desc: "Computer vision inventory monitoring for supermarket chains."
+      },
+      {
+        name: "VoltPack Tech",
+        industry: "D2C / Hardware",
+        stage: "Idea & Testing",
+        ask: "Rs. 50 Lakh",
+        score: 52,
+        status: "PIVOT",
+        desc: "Modular battery swap cells for lightweight delivery scooters."
+      }
+    ];
+
+    function calculateScore() {
+      const market = parseInt(document.getElementById('slider-market').value);
+      const comp = parseInt(document.getElementById('slider-comp').value);
+      const prod = parseInt(document.getElementById('slider-prod').value);
+      const fin = parseInt(document.getElementById('slider-fin').value);
+      const scale = parseInt(document.getElementById('slider-scale').value);
+      const reg = parseInt(document.getElementById('slider-reg').value);
+      const exec = parseInt(document.getElementById('slider-exec').value);
+
+      document.getElementById('val-market').innerText = `${market}/100`;
+      document.getElementById('val-comp').innerText = `${comp}/100`;
+      document.getElementById('val-prod').innerText = `${prod}/100`;
+      document.getElementById('val-fin').innerText = `${fin}/100`;
+      document.getElementById('val-scale').innerText = `${scale}/100`;
+      document.getElementById('val-reg').innerText = `${reg}/100`;
+      document.getElementById('val-exec').innerText = `${exec}/100`;
+
+      const finalScore = Math.round((market + comp + prod + fin + scale + reg + exec) / 7);
+      document.getElementById('final-score').innerText = finalScore;
+
+      const card = document.getElementById('verdict-card');
+      const text = document.getElementById('verdict-text');
+      const desc = document.getElementById('verdict-desc');
+
+      if (finalScore >= 80) {
+        card.className = "p-4 rounded-xl border mb-6 transition-all text-center bg-emerald-950/40 border-emerald-500/40 text-emerald-300";
+        text.innerText = "START (80 - 100)";
+        desc.innerText = "High viability and execution confidence. Worth building.";
+      } else if (finalScore >= 60) {
+        card.className = "p-4 rounded-xl border mb-6 transition-all text-center bg-blue-950/40 border-blue-500/40 text-blue-300";
+        text.innerText = "VALIDATE (60 - 79)";
+        desc.innerText = "Promising foundation. Needs target MVP iteration & feedback.";
+      } else if (finalScore >= 40) {
+        card.className = "p-4 rounded-xl border mb-6 transition-all text-center bg-amber-950/40 border-amber-500/40 text-amber-300";
+        text.innerText = "PIVOT (40 - 59)";
+        desc.innerText = "Key assumptions flawed. Restructure product or economics.";
+      } else {
+        card.className = "p-4 rounded-xl border mb-6 transition-all text-center bg-rose-950/40 border-rose-500/40 text-rose-300";
+        text.innerText = "DON'T START (<40)";
+        desc.innerText = "High risk of capital destruction. Do not bet money yet.";
+      }
+    }
+
+    function resetSliders() {
+      document.getElementById('slider-market').value = 91;
+      document.getElementById('slider-comp').value = 76;
+      document.getElementById('slider-prod').value = 84;
+      document.getElementById('slider-fin').value = 81;
+      document.getElementById('slider-scale').value = 88;
+      document.getElementById('slider-reg').value = 82;
+      document.getElementById('slider-exec').value = 86;
+      calculateScore();
+    }
+
+    function simulateTrajectory(direction) {
+      if (direction === 'up') {
+        document.getElementById('slider-fin').value = 95;
+        document.getElementById('slider-prod').value = 92;
+      } else {
+        document.getElementById('slider-fin').value = 58;
+        document.getElementById('slider-market').value = 65;
+      }
+      calculateScore();
+    }
+
+    function renderStartups(data) {
+      const grid = document.getElementById('startup-grid');
+      grid.innerHTML = '';
+      if (data.length === 0) {
+        grid.innerHTML = `<div class="col-span-3 text-center py-10 text-slate-500 text-sm">No businesses match your exact filter criteria.</div>`;
+        return;
+      }
+      data.forEach(item => {
+        const badgeColor = item.score >= 80 
+          ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' 
+          : item.score >= 60 
+          ? 'bg-blue-500/10 text-blue-400 border-blue-500/20' 
+          : 'bg-amber-500/10 text-amber-400 border-amber-500/20';
+
+        const card = document.createElement('div');
+        card.className = 'bg-slate-900 border border-slate-800 rounded-xl p-5 flex flex-col justify-between hover:border-slate-700 transition';
+        card.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs px-2.5 py-0.5 rounded-full border ${badgeColor} font-bold">${item.status}</span>
+              <span class="text-lg font-mono font-black text-white">${item.score}<span class="text-xs font-normal text-slate-500">/100</span></span>
+            </div>
+            <h3 class="font-bold text-white text-base">${item.name}</h3>
+            <p class="text-slate-400 text-xs mt-1 mb-4 leading-relaxed">${item.desc}</p>
+          </div>
+          <div class="border-t border-slate-800/80 pt-3 flex justify-between items-center text-xs">
+            <div>
+              <span class="text-slate-500 block text-[10px]">INDUSTRY / ASK</span>
+              <span class="text-slate-300 font-medium">${item.industry} &bull; ${item.ask}</span>
+            </div>
+            <button onclick="alert('Intro request sent to founder of ${item.name}!')" class="px-3 py-1.5 bg-slate-800 hover:bg-emerald-600 hover:text-slate-950 font-semibold rounded text-slate-200 transition">
+              Request Intro
+            </button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function filterStartups() {
+      const ind = document.getElementById('filter-industry').value;
+      const minScore = parseInt(document.getElementById('filter-score').value);
+
+      const filtered = startups.filter(s => {
+        const matchInd = ind === "All" || s.industry === ind;
+        const matchScore = s.score >= minScore;
+        return matchInd && matchScore;
+      });
+
+      renderStartups(filtered);
+    }
+
+    // Init on load
+    calculateScore();
+    renderStartups(startups);
+  </script>
+</body>
+</html>
